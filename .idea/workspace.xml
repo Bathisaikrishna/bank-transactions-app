@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b08db8d0-4bd4-4b26-ac74-ba2921f35884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/BankBalanceApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/BankTransactionProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/config/StreamConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/model/BankBalance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/model/BankTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/model/JsonSerde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/topology/BankBalanceTopology.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/kafka/streams/topology/BankBalanceTopologyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/consumer-console.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/create-topics.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kafka/streams/topology/BankBalanceTopology.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kafka/streams/topology/BankBalanceTopology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kafka/streams/topology/BankBalanceTopologyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kafka/streams/topology/BankBalanceTopologyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +64,33 @@
       <recent name="com.kafka.streams.topology" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankBalanceTopologyTest">
+  <component name="RunManager" selected="Application.BankTransactionProducer">
+    <configuration name="BankBalanceApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kafka.streams.BankBalanceApp" />
+      <module name="bank-transactions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kafka.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankTransactionProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kafka.streams.BankTransactionProducer" />
+      <module name="bank-transactions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kafka.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BankBalanceTopologyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bank-transactions" />
       <extension name="coverage">
@@ -116,11 +133,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.BankBalanceApp" />
+      <item itemvalue="Application.BankTransactionProducer" />
       <item itemvalue="JUnit.BankBalanceTopologyTest" />
       <item itemvalue="Maven.bank-transactions [clean,install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankTransactionProducer" />
+        <item itemvalue="Application.BankBalanceApp" />
         <item itemvalue="JUnit.BankBalanceTopologyTest" />
       </list>
     </recent_temporary>

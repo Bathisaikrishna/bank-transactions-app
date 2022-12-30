@@ -125,9 +125,9 @@ class BankBalanceTopologyTest {
         assertEquals(1L, thirdBalance.getId());
         assertEquals(new BigDecimal(500), thirdBalance.getAmount());
 
-        BankTransaction bankTransaction = rejectedBankTransactionTopic.readValue();
+        BankTransaction rejectedBankTransaction = rejectedBankTransactionTopic.readValue();
 
-        assertEquals(1L, bankTransaction.getId());
-        assertEquals(BankTransaction.BankTransactionState.REJECTED, bankTransaction.getState());
+        assertEquals(1L, rejectedBankTransaction.getId());
+        assertEquals(BankTransaction.BankTransactionState.REJECTED, rejectedBankTransaction.getState());
     }
 }
