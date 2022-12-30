@@ -1,17 +1,5 @@
 # Bank Transactions: Stateful Processing in Kafka Streams
 
-The purpose of this tutorial is for us to learn about **stateful processing** in Kafka Streams.
-The youtube video associated with this tutorial can be found here: [YouTube Video](https://youtube.com/asdafsfas). To follow this tutorial, clone this repository and switch to the branch `tutorial_start`.
-
-```shell
-git clone https://github.com/Programming-with-Mati/bank-transactions.git
-```
-Once the repository is cloned run:
-```shell
-git checkout tutorial_start
-```
-To run a working copy of the code, go to [Running the project](#running-the-project)
-
 ## Our Application
 Mati Bank Ltd. is a bank that holds its customer's bank balances in a Kafka Streams application. We are going to develop a topology that will process bank transactions and will stream updates of every new balance for a given user. The application will also stream all the rejected transactions into a different topic for error handling purposes.
 
